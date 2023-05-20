@@ -1,0 +1,18 @@
+<div class="post-container">
+	<section class="post-header">
+		<div class="post-user">
+			<app-avatar [pathImage]="post.pathImageUser"></app-avatar>
+			<span>{{ post.nameUser }} </span>
+		</div>
+
+		<button mat-icon-button>
+			<mat-icon>more_horiz</mat-icon>
+		</button>
+	</section>
+
+	<section class="post-image">
+		<img [src]="post.pathImagePost" />
+	</section>
+	<section class="post-actions"></section>
+	<section class="post-description"></section>
+</div>
