@@ -1,0 +1,41 @@
+.wd-company {
+	background-color: #202327;
+	padding: 2em;
+	border-radius: 10px;
+
+	&__back {
+		margin-bottom: 2em;
+		color: #607d8b !important;
+	}
+	.wd-card {
+		display: flex;
+		justify-content: space-between;
+
+		.wd-postulations {
+			display: flex;
+			align-items: center;
+			gap: 1.5em;
+			font-size: 14px;
+			font-weight: 600;
+			&__item {
+				display: flex;
+				align-items: center;
+				gap: 8px;
+
+				&:nth-child(1) {
+					color: #ff9800;
+				}
+				&:nth-child(2) {
+					color: #3ddd43;
+				}
+				&:nth-child(3) {
+					color: #00bcd4;
+				}
+			}
+		}
+	}
+
+	.wd-actions {
+		display: inline-flex;
+	}
+}

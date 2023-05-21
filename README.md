@@ -1,27 +1,20 @@
-# DemoStandaloneComponents
+# Cuando usar Standalone Components
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+Sin duda, los 𝗦𝘁𝗮𝗻𝗱𝗮𝗹𝗼𝗻𝗲 𝗖𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀 es una de las mejores características en estas nuevas versiones de Angular, ya que facilitan su reutilización y mantenimiento, además de no depender de un NgModule ¿𝗣𝗲𝗿𝗼 𝗲𝘀𝗼 𝘀𝗶𝗴𝗻𝗶𝗳𝗶𝗰𝗮 𝗾𝘂𝗲 𝗱𝗲𝗯𝗼 𝗺𝗶𝗴𝗿𝗮𝗿 𝘁𝗼𝗱𝗼𝘀 𝗺𝗶𝘀 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝗲𝘀 𝗮 𝗦𝘁𝗮𝗻𝗱𝗮𝗹𝗼𝗻𝗲🤔? ¡La respuesta es 𝗡𝗢 🛑! Aunque los standalone components tienen varias ventajas, no son siempre la mejor opción para todos los casos de uso.
 
-## Development server
+**Suscríbete a mi canal** 😎
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+https://www.youtube.com/c/LogiDev
 
-## Code scaffolding
+**Sígueme en mis redes:**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+👉Facebook : https://facebook.com/LogiDev25
+búscame como: @LogiDev25
 
-## Build
+👉Instagram: https://instagram.com/jimydolores/
+búscame como: @jimydolores
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+👉Twitter: https://twitter.com/jimyHDolores
+búscame como: @jimydolores
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+👉LinkedIn:https://linkedin.com/in/jimyhuachodolores/

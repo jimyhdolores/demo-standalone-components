@@ -1,0 +1,14 @@
+.bi-container {
+	display: flex;
+	gap: 1em;
+	.bi-form {
+		&__input {
+			width: 100%;
+		}
+	}
+
+	&__image {
+		height: 18em;
+		align-self: center;
+	}
+}

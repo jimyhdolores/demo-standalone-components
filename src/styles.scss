@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@include mat.core();
+
+$demo-primary: mat.define-palette(mat.$amber-palette, 700, 100, 900);
+$demo-accent: mat.define-palette(mat.$pink-palette, 500, 200, 700);
+
+$demo-warn: mat.define-palette(mat.$red-palette);
+
+$demo-theme: mat.define-light-theme(
+	(
+		color: (
+			primary: $demo-primary,
+			accent: $demo-accent,
+			warn: $demo-warn
+		)
+	)
+);
+@include mat.all-component-themes($demo-theme);
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: Roboto, 'Helvetica Neue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: #000000;
+	color: #e7e9ea;
+
+	.mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+		color: #ffa000;
+	}
+
+	.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+	.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+	.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+		border-color: #8f7345;
+	}
+
+	.mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input {
+		color: white;
+	}
+}

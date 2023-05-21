@@ -1,0 +1,27 @@
+<div class="bi-container">
+	<form class="bi-form" [formGroup]="basicInformationForm">
+		<h3>Carga tu CV</h3>
+		<input hidden (change)="onFileSelected($event)" #fileInput type="file" accept="application/pdf" />
+
+		<button mat-raised-button color="primary" (click)="fileInput.click()" type="button">
+			<mat-icon>file_upload</mat-icon>
+			Máximo 5MB, sólo archivos PDF.
+		</button>
+
+		<h3>¿Cuál es tu expectativa de sueldo bruto para este empleo?</h3>
+		<mat-form-field class="bi-form__input" appearance="outline" floatLabel="auto">
+			<input matInput type="number" formControlName="salary" />
+			<mat-hint>dólares(USD) al mes</mat-hint>
+			<mat-error *ngIf="salaryField.hasError('required')"> El campo es requerido </mat-error>
+			<mat-error *ngIf="salaryField.hasError('min')"> El monto minimo es de 3000 </mat-error>
+		</mat-form-field>
+		<h3>¿Por qué te interesa trabajar en FULLTIMEFORCE?</h3>
+
+		<mat-form-field class="bi-form__input" appearance="outline" floatLabel="auto">
+			<textarea matInput formControlName="question"></textarea>
+			<mat-error *ngIf="questionField.hasError('required')"> El campo es requerido </mat-error>
+		</mat-form-field>
+	</form>
+
+	<img class="bi-container__image" src="assets/img/basic.png" />
+</div>

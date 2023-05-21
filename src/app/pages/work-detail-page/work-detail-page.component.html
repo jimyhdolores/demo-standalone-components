@@ -1,0 +1,62 @@
+<section class="wd-company" *ngIf="work">
+	<button class="wd-company__back" mat-button routerLink="/">
+		<span class="material-icons"> arrow_back </span>
+		Regresar al listado de empleos
+	</button>
+
+	<div class="wd-card">
+		<app-work-card
+			[dataWork]="{ image: work.image, title: work.title, company: work.company, publication: work.publication }"
+		/>
+		<section class="wd-postulations">
+			<div class="wd-postulations__item">
+				<span class="material-icons"> person </span>
+				{{ work.detail.postulations }} postulaciones
+			</div>
+			<div class="wd-postulations__item">
+				<span class="material-icons"> schedule </span>
+				Responde entre {{ work.detail.response }}
+			</div>
+			<div class="wd-postulations__item">
+				<span class="material-icons"> verified </span>
+				Revisado por última {{ work.detail.reviewed }}
+			</div>
+		</section>
+	</div>
+	<br />
+	<section class="wd-detail">
+		<p class="wd-detail__company">
+			{{ work.detail.descriptionCompany }}
+		</p>
+
+		<h2>Funciones del cargo</h2>
+		<span>
+			{{ work.detail.jobFunctions.description }}
+		</span>
+
+		<ul>
+			<li *ngFor="let function of work.detail.jobFunctions.items">
+				{{ function }}
+			</li>
+		</ul>
+		<h2>Requerimientos del cargo</h2>
+		<ul>
+			<li *ngFor="let requirement of work.detail.jobRequirements">
+				{{ requirement }}
+			</li>
+		</ul>
+	</section>
+
+	<section class="wd-actions">
+		<button
+			routerLink="/postulation"
+			[state]="{
+				wordCard: { image: work.image, title: work.title, company: work.company, publication: work.publication }
+			}"
+			mat-flat-button
+			color="accent"
+		>
+			Postular
+		</button>
+	</section>
+</section>

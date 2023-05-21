@@ -1,0 +1,24 @@
+<div class="post-container">
+	<button class="post-container__back" mat-button routerLink="/">
+		<span class="material-icons"> arrow_back </span>
+		Regresar al listado de empleos
+	</button>
+
+	<ng-container *ngIf="!confirmation">
+		<app-work-card [dataWork]="wordCard" />
+		<br />
+		<mat-stepper class="post-stepper" linear #stepper color="primary">
+			<mat-step label="Experiencia">
+				<app-experience />
+				<button mat-flat-button matStepperNext color="accent">Siguiente</button>
+			</mat-step>
+			<mat-step label="Información Básica">
+				<app-basic-information />
+				<button mat-button matStepperPrevious color="primary">Atras</button>
+				<button mat-flat-button color="accent" (click)="confirmation = true">Enviar</button>
+			</mat-step>
+		</mat-stepper>
+	</ng-container>
+
+	<app-postulation-confirmation *ngIf="confirmation" class="post-container__confirmation" />
+</div>

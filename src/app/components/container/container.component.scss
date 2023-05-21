@@ -1,55 +1,43 @@
-.container {
-	display: flex;
-	height: 100%;
-
-	.menu {
+.header {
+	box-shadow: #607d8bba 0px 2px 8px;
+	.content-header {
+		max-width: 1440px;
+		padding: 20px 24px 20px 24px;
+		margin-right: auto;
+		margin-left: auto;
 		display: flex;
-		flex-direction: column;
-		padding: 8px 18px 20px 18px;
-		font-weight: 400;
-		font-size: 16px;
-		width: 244px;
-		border-right: 1px solid #262626;
+		justify-content: space-between;
+		align-items: center;
 
-		.material-icons,
-		.material-symbols-outlined {
-			font-size: 28px;
+		&__title {
+			font-size: 18px;
+			font-weight: bold;
+			cursor: pointer;
 		}
 
-		&__logo {
-			height: 92px;
+		.user {
 			display: flex;
+			gap: 1em;
 			align-items: center;
-		}
 
-		.menus {
-			.menu-content {
-				padding-top: 10px;
-				padding-bottom: 10px;
-				padding-left: 5px;
-				cursor: pointer;
-				margin-bottom: 0.8em;
-
-				.menu-item {
-					display: flex;
-					gap: 1em;
-					align-items: center;
-				}
-
-				&:hover {
-					background-color: #1a1a1a;
-					border-radius: 8px;
-				}
+			&__name {
+				font-size: 16px;
+				font-weight: 500;
+			}
+			&__image {
+				height: 32px;
+				width: 32px;
+				border-radius: 50%;
+				object-fit: cover;
+				object-position: center;
 			}
 		}
 	}
+}
 
-	.main {
-		flex: 1;
-		display: flex;
-		justify-content: center;
-
-		overflow-y: auto;
-		height: 100vh;
-	}
+.container {
+	max-width: 1440px;
+	padding: 20px 24px 20px 24px;
+	margin-right: auto;
+	margin-left: auto;
 }

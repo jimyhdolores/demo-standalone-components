@@ -1,6 +1,0 @@
-<div class="stories">
-	<div class="stories__user" *ngFor="let user of users">
-		<app-avatar [pathImage]="user.path" [isStory]="true"></app-avatar>
-		<span>{{ user.name.length > 6 ? (user.name | slice : 0 : 5) + '...' : user.name }} </span>
-	</div>
-</div>

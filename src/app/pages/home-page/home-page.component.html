@@ -1,0 +1,18 @@
+<div class="home-container">
+	<section class="home-cards" matRipple *ngFor="let work of works" (click)="clickWorkCard(work)">
+		<app-work-card
+			[dataWork]="{ image: work.image, title: work.title, company: work.company, publication: work.publication }"
+		/>
+
+		<section class="home-work">
+			<div class="home-work__item">
+				<span class="material-icons"> room </span>
+				<span class="home-work__country">{{ work.country }}</span>
+			</div>
+			<div class="home-work__item">
+				<span class="material-icons"> {{ work.isRemote ? 'wifi' : 'apartment' }} </span>
+				<span class="home-work__modality">{{ work.isRemote ? 'Remoto' : 'Presencial' }}</span>
+			</div>
+		</section>
+	</section>
+</div>

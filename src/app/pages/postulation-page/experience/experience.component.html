@@ -1,0 +1,22 @@
+<div class="expe-container">
+	<form class="form" [formGroup]="experiencieForm">
+		<h2>Cuéntanos sobre tu experiencia y perfil profesional.</h2>
+		<mat-form-field class="form__input" appearance="outline" floatLabel="auto">
+			<textarea matInput formControlName="experiencie"></textarea>
+			<mat-error *ngIf="experiencieField.hasError('minLength') || experiencieField.hasError('required')">
+				El campo es requerido y debe tener más de 20 caracteres
+			</mat-error>
+		</mat-form-field>
+
+		<h2>Cuéntanos sobre tu formación académica y estudios.</h2>
+
+		<mat-form-field class="form__input" appearance="outline" floatLabel="auto">
+			<textarea matInput formControlName="formation"></textarea>
+			<mat-error *ngIf="formationField.hasError('minLength') || experiencieField.hasError('required')">
+				El campo es requerido y debe tener más de 20 caracteres
+			</mat-error>
+		</mat-form-field>
+	</form>
+
+	<img class="expe-container__image" src="assets/img/work.png" />
+</div>

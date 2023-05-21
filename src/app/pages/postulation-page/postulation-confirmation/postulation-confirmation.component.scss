@@ -1,0 +1,10 @@
+.pc-container {
+	width: 250px;
+	text-align: center;
+	background-color: #414244;
+	border-radius: 10px;
+	padding: 1em;
+	&__image {
+		width: inherit;
+	}
+}

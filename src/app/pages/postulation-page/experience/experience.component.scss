@@ -1,0 +1,14 @@
+.expe-container {
+	display: flex;
+	gap: 1em;
+
+	&__image {
+		height: 18em;
+		align-self: center;
+	}
+	.form {
+		&__input {
+			width: 100%;
+		}
+	}
+}

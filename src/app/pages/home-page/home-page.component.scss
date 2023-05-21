@@ -1,0 +1,29 @@
+.home-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+
+	.home-cards {
+		display: flex;
+		justify-content: space-between;
+		border-radius: 8px;
+		background-color: #202327;
+		padding: 1em;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #1d1f23;
+		}
+
+		.home-work {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			&__item {
+				display: flex;
+				align-items: center;
+				gap: 1em;
+			}
+		}
+	}
+}
