@@ -18,6 +18,6 @@ export class HomePageComponent {
 	readonly works = WORK_DUMMY;
 
 	clickWorkCard(work: IWork): void {
-		this._router.navigate(['/work-detail'], { state: { work } });
+		this._router.navigate(['/work-detail'], { state: { work }, queryParams: { token: 'miToken' } });
 	}
 }

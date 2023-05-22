@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, Input, OnInit, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { Router, RouterLink } from '@angular/router';
 import { WorkCardComponent } from 'src/app/components/work-card/work-card.component';
@@ -13,6 +13,8 @@ import { IWork } from 'src/app/models/components-model.interface';
 	styleUrls: ['./work-detail-page.component.scss']
 })
 export default class WorkDetailPageComponent implements OnInit {
+	@Input() token?: string;
+
 	private _router = inject(Router);
 	work?: IWork;
 
@@ -22,5 +24,7 @@ export default class WorkDetailPageComponent implements OnInit {
 			this.work = workState as IWork;
 		}
 	}
-	ngOnInit(): void {}
+	ngOnInit(): void {
+		console.log('---capturando parametro usando @Input token->', this.token);
+	}
 }
