@@ -3,7 +3,6 @@ import { IWordCardComponent } from 'src/app/models/components-model.interface';
 
 @Component({
 	selector: 'app-work-card',
-	standalone: true,
 	templateUrl: './work-card.component.html',
 	styleUrls: ['./work-card.component.scss']
 })

@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
 	selector: 'app-postulation-confirmation',
-	standalone: true,
 	template: `
 		<div class="pc-container">
 			<img class="pc-container__image" src="assets/img/confirmation-postulation.png" />
