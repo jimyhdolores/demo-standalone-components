@@ -14,7 +14,7 @@ búscame como: @LogiDev25
 👉Instagram: https://instagram.com/jimydolores/
 búscame como: @jimydolores
 
-👉Twitter: https://twitter.com/jimyHDolores
+👉Twitter: https://twitter.com/jimydolores
 búscame como: @jimydolores
 
 👉LinkedIn:https://linkedin.com/in/jimyhuachodolores/
